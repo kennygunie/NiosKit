@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: d0eeca6bf87958e088b254396ae66873f971cfb1
-  NiosKit: 1b730165a8b5207017aae125f9d0cb957f889a83
+  NiosKit: 47f3599b61ac74fd0f09fa89d968acb419140ab5
   Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
 
 COCOAPODS: 0.38.2
