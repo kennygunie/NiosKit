@@ -7,6 +7,7 @@
 //
 
 #import "NKViewController.h"
+#import <NiosKit/NiosKit.h>
 
 @interface NKViewController ()
 
