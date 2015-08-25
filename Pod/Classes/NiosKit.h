@@ -11,5 +11,8 @@
 
 #import "NSError+NiosKit.h"
 #import "UIView+NiosKit.h"
+#import "UIImage+NiosKit.h"
+#import "UIImageView+NiosKit.h"
+#import "UIScrollView+NiosKit.m"
 
 #endif
