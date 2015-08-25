@@ -8,7 +8,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.3)
   - FBSnapshotTestCase/SwiftSupport (2.0.3):
     - FBSnapshotTestCase/Core
-  - NiosKit (0.1.0)
+  - NiosKit (0.1.2)
   - Specta (1.0.3)
 
 DEPENDENCIES:
@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: d0eeca6bf87958e088b254396ae66873f971cfb1
-  NiosKit: 5dd4846b0b2b574c6dd24ca0139ebb50cc72d0c2
+  NiosKit: d895574e9ad4af782410650bb6db8a2b99707564
   Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
 
 COCOAPODS: 0.38.2
