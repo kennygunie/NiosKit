@@ -14,5 +14,7 @@
 #import "UIImage+NiosKit.h"
 #import "UIImageView+NiosKit.h"
 #import "UIScrollView+NiosKit.h"
+#import "UIViewController+NiosKit.h"
+#import "UIStoryboard+NiosKit.h"
 
 #endif
