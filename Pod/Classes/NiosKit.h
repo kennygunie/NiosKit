@@ -13,6 +13,6 @@
 #import "UIView+NiosKit.h"
 #import "UIImage+NiosKit.h"
 #import "UIImageView+NiosKit.h"
-#import "UIScrollView+NiosKit.m"
+#import "UIScrollView+NiosKit.h"
 
 #endif
