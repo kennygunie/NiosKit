@@ -17,12 +17,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Test logs
+	// Logs
     DDLogError(@"This is error log");
     DDLogWarn(@"This is warning log");
     DDLogInfo(@"This is info log");
     DDLogDebug(@"This is debug log");
     DDLogVerbose(@"This is verbose log");
+    
+    // Error
+    NSError *error = [NSError errorWithDomain:@"Test error domain"
+                                         code:42
+                                     userInfo:@{@"key1":@"info 1",
+                                                @"key2":@"info 2"}];
+    [error logWithReason:@"Reason 1"];
+    [error log:@"Reason %@, reason %@", @2, @3];
 }
 
 - (void)didReceiveMemoryWarning
