@@ -42,6 +42,14 @@
  *  Completion when a (single) item is hidden
  */
 @property (nonatomic, copy) void (^didHideItem)();
+/**
+ *  Completion to get value
+ */
+@property (nonatomic, copy) id (^valueCompletion)(void);
+/**
+ *  Completion to change value
+ */
+@property (nonatomic, copy) void (^didOpenCompletion)(BOOL open);
 
 #pragma mark - Class Methods
 

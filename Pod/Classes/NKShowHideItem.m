@@ -34,16 +34,16 @@
 -(void)setOpen:(BOOL)open {
     if (open) {
         // Show
-        NSMutableArray *shownItems = [NSMutableArray new];
-        for (NKShowHideItem *child in self.children) {
-            if (child.parent == self) {
-                if (!child.show) {
-                    [shownItems addObject:child];
-                }
-                child.show = YES;
-            }
-        }
         if (self.didShowItems) {
+            NSMutableArray *shownItems = [NSMutableArray new];
+            for (NKShowHideItem *child in self.children) {
+                if (child.parent == self) {
+                    if (!child.isShow) {
+                        [shownItems addObject:child];
+                        child.show = YES;
+                    }
+                }
+            }
             self.didShowItems([shownItems reversedArray]);
         }
     }
@@ -66,6 +66,7 @@
 
 - (void)setChildren:(NSArray *)children {
     _children = children;
+    // set parent for children
     for (NKShowHideItem *child in _children) {
         child.parent = self;
     }

@@ -144,7 +144,7 @@ typedef NS_ENUM(NSInteger, NKShowHideTableViewControllerCellID) {
 
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-    NKShowHideItem *item  = self.dataSource[fromIndexPath.section][fromIndexPath.row];
+    id item  = self.dataSource[fromIndexPath.section][fromIndexPath.row];
     [self.dataSource[fromIndexPath.section] removeObjectAtIndex:fromIndexPath.row];
     [self.dataSource[toIndexPath.section] insertObject:item atIndex:toIndexPath.row];
 }

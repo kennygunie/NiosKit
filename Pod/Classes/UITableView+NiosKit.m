@@ -35,7 +35,6 @@
 
 - (NSMutableArray *)dataSourceWithItems:(NSArray *)items {
     NSMutableArray *dataSource = [NSMutableArray new];
-    
     for (NSInteger section = 0; section < [items count]; section++) {
         [dataSource addObject:[NSMutableArray new]];
         for (NKShowHideItem *item in items[section]) {
@@ -43,12 +42,13 @@
                 [dataSource[section] addObject:item];
             }
             __weak typeof(item) weakItem = item;
+            
             [item setDidShowItems:^(NSArray *shownItems) {
                 for (NKShowHideItem *shownItem in shownItems) {
                     [self addItem:shownItem
-                       withParentIndex:[dataSource[section] indexOfObject:weakItem]
-                          inDataSource:dataSource
-                            forSection:section];
+                  withParentIndex:[dataSource[section] indexOfObject:weakItem]
+                     inDataSource:dataSource
+                       forSection:section];
                 }
             }];
             
