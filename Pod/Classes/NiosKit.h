@@ -16,5 +16,6 @@
 #import "UIScrollView+NiosKit.h"
 #import "UIViewController+NiosKit.h"
 #import "UIStoryboard+NiosKit.h"
+#import "NKLogFormatter.h"
 
 #endif

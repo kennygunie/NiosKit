@@ -7,7 +7,6 @@
 //
 
 #import "NKViewController.h"
-#import <NiosKit/NiosKit.h>
 
 @interface NKViewController ()
 
@@ -18,7 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Test logs
+    DDLogError(@"This is error log");
+    DDLogWarn(@"This is warning log");
+    DDLogInfo(@"This is info log");
+    DDLogDebug(@"This is debug log");
+    DDLogVerbose(@"This is verbose log");
 }
 
 - (void)didReceiveMemoryWarning
