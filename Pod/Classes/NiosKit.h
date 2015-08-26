@@ -17,5 +17,8 @@
 #import "UIViewController+NiosKit.h"
 #import "UIStoryboard+NiosKit.h"
 #import "NKLogFormatter.h"
+#import "NSArray+NiosKit.h"
+#import "UITableView+NiosKit.h"
+#import "NKShowHideItem.h"
 
 #endif

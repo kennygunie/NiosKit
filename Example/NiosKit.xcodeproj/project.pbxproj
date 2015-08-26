@@ -13,7 +13,7 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* NKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* NKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* NKViewController.m */; };
+		6003F5A7195388D20070C39A /* NKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* NKRootViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +23,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9462FD7755023D4CFC5272B9 /* Pods_NiosKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B8F6347AEBB71359648A7A /* Pods_NiosKit_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C4138B3E24F92CB163169478 /* Pods_NiosKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC1938990A485ED75DEF660 /* Pods_NiosKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FBEB5B871B8E5928001B0804 /* NKRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEB5B861B8E5928001B0804 /* NKRootCollectionViewCell.m */; };
+		FBEB5B8A1B8E5BFF001B0804 /* NKShowHideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEB5B891B8E5BFF001B0804 /* NKShowHideTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,8 @@
 		6003F59B195388D20070C39A /* NiosKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiosKit-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* NKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* NKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* NKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKViewController.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* NKRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKRootViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* NKRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKRootViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* NiosKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiosKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +67,10 @@
 		99BF02B395803C515C9A643D /* Pods-NiosKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiosKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NiosKit_Tests/Pods-NiosKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A7FFF8D271679AD986D6A26B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC1CA15656DD3C91C06E9B22 /* Pods-NiosKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiosKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NiosKit_Tests/Pods-NiosKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBEB5B851B8E5928001B0804 /* NKRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRootCollectionViewCell.h; sourceTree = "<group>"; };
+		FBEB5B861B8E5928001B0804 /* NKRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRootCollectionViewCell.m; sourceTree = "<group>"; };
+		FBEB5B881B8E5BFF001B0804 /* NKShowHideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKShowHideTableViewController.h; sourceTree = "<group>"; };
+		FBEB5B891B8E5BFF001B0804 /* NKShowHideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKShowHideTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +150,14 @@
 				6003F59C195388D20070C39A /* NKAppDelegate.h */,
 				6003F59D195388D20070C39A /* NKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* NKViewController.h */,
-				6003F5A6195388D20070C39A /* NKViewController.m */,
+				6003F5A5195388D20070C39A /* NKRootViewController.h */,
+				6003F5A6195388D20070C39A /* NKRootViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				FBEB5B851B8E5928001B0804 /* NKRootCollectionViewCell.h */,
+				FBEB5B861B8E5928001B0804 /* NKRootCollectionViewCell.m */,
+				FBEB5B881B8E5BFF001B0804 /* NKShowHideTableViewController.h */,
+				FBEB5B891B8E5BFF001B0804 /* NKShowHideTableViewController.m */,
 			);
 			name = "Example for NiosKit";
 			path = NiosKit;
@@ -391,7 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* NKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* NKViewController.m in Sources */,
+				FBEB5B8A1B8E5BFF001B0804 /* NKShowHideTableViewController.m in Sources */,
+				FBEB5B871B8E5928001B0804 /* NKRootCollectionViewCell.m in Sources */,
+				6003F5A7195388D20070C39A /* NKRootViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
