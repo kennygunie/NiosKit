@@ -3,6 +3,8 @@ use_frameworks!
 
 target 'NiosKit_Example', :exclusive => true do
   pod "NiosKit", :path => "../"
+  
+  pod 'CocoaLumberjack', '2.0.0'
 end
 
 target 'NiosKit_Tests', :exclusive => true do
