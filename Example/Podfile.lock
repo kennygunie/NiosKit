@@ -1,4 +1,12 @@
 PODS:
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0):
+    - CocoaLumberjack/Default
   - Expecta (1.0.2)
   - Expecta+Snapshots (2.0.0):
     - Expecta (~> 1.0)
@@ -8,10 +16,12 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.3)
   - FBSnapshotTestCase/SwiftSupport (2.0.3):
     - FBSnapshotTestCase/Core
-  - NiosKit (0.1.2)
+  - NiosKit (0.1.3):
+    - CocoaLumberjack (~> 2.0.0)
   - Specta (1.0.3)
 
 DEPENDENCIES:
+  - CocoaLumberjack (= 2.0.0)
   - Expecta
   - Expecta+Snapshots
   - FBSnapshotTestCase
@@ -23,10 +33,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
   Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: d0eeca6bf87958e088b254396ae66873f971cfb1
-  NiosKit: d895574e9ad4af782410650bb6db8a2b99707564
+  NiosKit: 96fdc3b6cf42632d9aad38fef0739e8b8c6cfc37
   Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
 
 COCOAPODS: 0.38.2

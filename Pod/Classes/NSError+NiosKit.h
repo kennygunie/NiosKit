@@ -10,4 +10,7 @@
 
 @interface NSError (NiosKit)
 
+- (void)logWithReason:(NSString *)reason;
+- (void)log:(NSString *)format, ...;
+
 @end

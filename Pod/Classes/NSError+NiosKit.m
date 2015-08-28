@@ -7,7 +7,22 @@
 //
 
 #import "NSError+NiosKit.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @implementation NSError (NiosKit)
+
+- (void)log:(NSString *)format, ... {
+    va_list args;
+    va_start(args, format);
+    NSString *reason = [[NSString alloc] initWithFormat:format arguments:args];
+    [self logWithReason:reason];
+    va_end(args);
+}
+
+- (void)logWithReason:(NSString *)reason {
+    DDLogError(@"%@\n\nReason:\n%@\n---\n",
+               self.debugDescription,
+               reason);
+}
 
 @end

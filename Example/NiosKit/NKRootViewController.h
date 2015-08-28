@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface NKViewController : UIViewController
+@interface NKRootViewController : UICollectionViewController
 
 @end

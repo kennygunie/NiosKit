@@ -7,12 +7,20 @@
 //
 
 #import "NKAppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @implementation NKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Setup log
+    DDTTYLogger *xcodeLogger = [DDTTYLogger sharedInstance];
+    xcodeLogger.logFormatter = [NKLogFormatter new];
+    [DDLog addLogger:xcodeLogger];
+    DDASLLogger *consoleLogger = [DDASLLogger sharedInstance];
+    consoleLogger.logFormatter = [NKLogFormatter new];
+    [DDLog addLogger:consoleLogger];
+    
     return YES;
 }
 
