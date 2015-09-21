@@ -128,6 +128,14 @@
     self.layer.masksToBounds = NO;
 }
 
+- (void)appearWithDuration:(NSTimeInterval)duration {
+    self.alpha = 0.f;
+    [UIView animateWithDuration:duration
+                     animations:^{
+                         self.alpha = 1.f;
+                     }];
+}
+
 #pragma mark - Private methods
 
 @end

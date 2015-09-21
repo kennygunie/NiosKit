@@ -20,5 +20,6 @@
 #import "NSArray+NiosKit.h"
 #import "UITableView+NiosKit.h"
 #import "NKShowHideItem.h"
+#import "NSString+NiosKit.h"
 
 #endif

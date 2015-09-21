@@ -11,6 +11,7 @@
 @interface UIImageView (NiosKit)
 
 - (void)setupRenderingModeTemplate;
+- (void)setupRenderingModeTemplateWithColor:(UIColor *)color;
 - (void)setAutoFitImage:(UIImage *)image;
 
 @end
