@@ -14,6 +14,11 @@
     self.image = [self.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 }
 
+- (void)setupRenderingModeTemplateWithColor:(UIColor *)color {
+    [self setupRenderingModeTemplate];
+    self.tintColor = color;
+}
+
 - (void)setAutoFitImage:(UIImage *)image {
     if (image.size.width > image.size.height) {
         self.image = [UIImage imageWithCGImage:image.CGImage

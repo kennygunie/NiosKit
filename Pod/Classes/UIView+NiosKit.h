@@ -31,5 +31,6 @@
             ovalHeight:(CGFloat)heightDelta
         ovalWidthDelta:(CGFloat)widthDelta;
 - (void)transformCircle;
+- (void)appearWithDuration:(NSTimeInterval)duration;
 
 @end
