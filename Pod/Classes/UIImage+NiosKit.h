@@ -10,7 +10,7 @@
 
 @interface UIImage (NiosKit)
 
-+ (UIImage *)templateImageNamed:(NSString *)imageName;
-+ (UIImage *)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)newWidth;
-
++ (instancetype)templateImageNamed:(NSString *)imageName;
++ (instancetype)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)newWidth;
++ (instancetype)imageFromColor:(UIColor *)color;
 @end

@@ -10,11 +10,11 @@
 
 @implementation UIImage (NiosKit)
 
-+ (UIImage *)templateImageNamed:(NSString *)imageName {
++ (instancetype)templateImageNamed:(NSString *)imageName {
     return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 }
 
-+ (UIImage *)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)length
++ (instancetype)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)length
 {
     CGFloat scaleFactor = sourceImage.size.width > sourceImage.size.height
     ? length / sourceImage.size.width
@@ -26,6 +26,17 @@
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
+}
+
++ (instancetype)imageFromColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 @end
