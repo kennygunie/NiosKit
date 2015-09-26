@@ -125,7 +125,7 @@
 
 - (void)transformCircle {
     self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
-    self.layer.masksToBounds = NO;
+    self.layer.masksToBounds = YES;
 }
 
 - (void)appearWithDuration:(NSTimeInterval)duration {

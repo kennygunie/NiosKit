@@ -13,5 +13,6 @@
 - (void)setupRenderingModeTemplate;
 - (void)setupRenderingModeTemplateWithColor:(UIColor *)color;
 - (void)setAutoFitImage:(UIImage *)image;
+- (void)cropCircular;
 
 @end

@@ -12,5 +12,6 @@
 
 + (instancetype)templateImageNamed:(NSString *)imageName;
 + (instancetype)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)newWidth;
-+ (instancetype)imageFromColor:(UIColor *)color;
++ (instancetype)imageWithColor:(UIColor *)color;
+
 @end

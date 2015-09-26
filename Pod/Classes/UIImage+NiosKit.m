@@ -28,7 +28,7 @@
     return newImage;
 }
 
-+ (instancetype)imageFromColor:(UIColor *)color {
++ (instancetype)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
