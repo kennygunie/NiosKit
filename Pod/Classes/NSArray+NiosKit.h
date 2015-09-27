@@ -15,6 +15,7 @@
  ie: the first item will become the last, the last the first, etc.
  */
 - (NSArray *)reversedArray;
+- (id)randomObject;
 
 
 @end
