@@ -12,5 +12,6 @@
 
 - (NSString *)trim;
 - (BOOL)isValidEmailAddress;
+- (BOOL)isAlphaNumeric;
 
 @end
