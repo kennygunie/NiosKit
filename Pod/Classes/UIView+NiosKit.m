@@ -9,6 +9,7 @@
 #pragma mark - Imports
 
 #import "UIView+NiosKit.h"
+#import <QuartzCore/QuartzCore.h>
 
 #pragma mark - Implementation
 
