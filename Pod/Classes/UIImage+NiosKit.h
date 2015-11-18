@@ -11,7 +11,9 @@
 @interface UIImage (NiosKit)
 
 + (instancetype)templateImageNamed:(NSString *)imageName;
-+ (instancetype)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)newWidth;
+//+ (instancetype)imageWithImage:(UIImage*)sourceImage scaledToLength:(CGFloat)newWidth;
 + (instancetype)imageWithColor:(UIColor *)color;
+- (instancetype)scaleToFillLength:(CGFloat)length;
+- (instancetype)autorotateImage;
 
 @end
