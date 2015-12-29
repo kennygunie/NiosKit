@@ -9,6 +9,10 @@
 #import "NSError+NiosKit.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
+#ifndef ddLogLevel
+#define ddLogLevel 0
+#endif
+
 @implementation NSError (NiosKit)
 
 - (void)log:(NSString *)format, ... {

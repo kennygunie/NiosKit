@@ -14,12 +14,18 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (BOOL)isValidEmailAddress
-{
+- (BOOL)isValidEmailAddress {
     // http://stackoverflow.com/questions/3139619/check-that-an-email-address-is-valid-on-ios
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:self];
+}
+
+- (BOOL)isAlphaNumeric {
+    NSCharacterSet *unwantedCharacters =
+    [[NSCharacterSet alphanumericCharacterSet] invertedSet];
+    
+    return ([self rangeOfCharacterFromSet:unwantedCharacters].location == NSNotFound);
 }
 
 @end

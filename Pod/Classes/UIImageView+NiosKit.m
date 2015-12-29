@@ -19,14 +19,25 @@
     self.tintColor = color;
 }
 
-- (void)setAutoFitImage:(UIImage *)image {
-    if (image.size.width > image.size.height) {
-        self.image = [UIImage imageWithCGImage:image.CGImage
-                                         scale:1.f
-                                   orientation:UIImageOrientationRight];
-    } else {
-        self.image = image;
+- (void)cropCircular {
+    if (!self.image) {
+        return;
     }
+    
+
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 1.0);
+    
+    // Add a clip before drawing anything, in the shape of an rounded rect
+    [[UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                cornerRadius:CGRectGetWidth(self.bounds)/2] addClip];
+    // Draw your image
+    [self.image drawInRect:self.bounds];
+    
+    // Get the image, here setting the UIImageView image
+    self.image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // Lets forget about that we were drawing
+    UIGraphicsEndImageContext();
 }
 
 @end

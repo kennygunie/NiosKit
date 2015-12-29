@@ -21,5 +21,7 @@
 #import "UITableView+NiosKit.h"
 #import "NKShowHideItem.h"
 #import "NSString+NiosKit.h"
+#import "NKCircularImageView.h"
+#import "NKCircleView.h"
 
 #endif

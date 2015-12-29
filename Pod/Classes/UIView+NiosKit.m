@@ -9,6 +9,7 @@
 #pragma mark - Imports
 
 #import "UIView+NiosKit.h"
+#import <QuartzCore/QuartzCore.h>
 
 #pragma mark - Implementation
 
@@ -43,6 +44,7 @@
 
 
 - (void)addSoftShadow {
+    self.layer.masksToBounds = NO;
     self.layer.shadowOpacity = .6f;
     self.layer.shadowRadius = 3.f;
     self.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -50,9 +52,10 @@
 }
 
 - (void)addShadow {
-    self.layer.shadowOpacity = .9f;
-    self.layer.shadowRadius = .7f;
+    self.layer.masksToBounds = NO;
     self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowRadius = 2.f;
+    self.layer.shadowOpacity = .3f;
     self.layer.shadowOffset = CGSizeMake(0.0, 0.0);
 }
 
@@ -125,7 +128,7 @@
 
 - (void)transformCircle {
     self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
-    self.layer.masksToBounds = NO;
+    self.layer.masksToBounds = YES;
 }
 
 - (void)appearWithDuration:(NSTimeInterval)duration {
